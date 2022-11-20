@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>App</class>
+ <widget class="QMainWindow" name="App">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>978</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lotdak Tweety</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/images/icons8-document-384.png</normaloff>:/icons/images/icons8-document-384.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="1">
+     <widget class="QPushButton" name="seldate_btn">
+      <property name="minimumSize">
+       <size>
+        <width>319</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>319</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Selection Range Date</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/images/icons8-calendar-96.png</normaloff>:/icons/images/icons8-calendar-96.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="3">
+     <widget class="QLabel" name="base_label">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Helvetica&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Keyword</string>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="base_date_comboBox">
+      <property name="minimumSize">
+       <size>
+        <width>319</width>
+        <height>22</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>All </string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QTabWidget" name="mainTab">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="base_tab">
+       <attribute name="title">
+        <string>Base</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="4" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="positive_label">
+            <property name="text">
+             <string>Positive : 0%</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="negative_label">
+            <property name="text">
+             <string>Negative : 0%</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="neutal_label">
+            <property name="text">
+             <string>Neutral : 0%</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0" colspan="4">
+         <widget class="QTableWidget" name="base_table">
+          <property name="acceptDrops">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3" alignment="Qt::AlignRight">
+         <widget class="QLabel" name="status_base_label">
+          <property name="text">
+           <string>0 Tweets</string>
+          </property>
+          <property name="margin">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="2">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="word_tab">
+       <attribute name="title">
+        <string>Word</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="1" column="0" colspan="2" alignment="Qt::AlignRight">
+         <widget class="QLabel" name="status_word_label">
+          <property name="text">
+           <string>0 Words</string>
+          </property>
+          <property name="margin">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QTableWidget" name="word_table"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="hashtag_tab">
+       <attribute name="title">
+        <string>Hashtag</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="1" alignment="Qt::AlignRight">
+         <widget class="QLabel" name="status_hashtag_label">
+          <property name="text">
+           <string>0 Hashtags</string>
+          </property>
+          <property name="margin">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QTableWidget" name="hashtag_table"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="searchWidget">
+   <property name="windowTitle">
+    <string>Search Window</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0" colspan="3">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="date_label">
+       <property name="text">
+        <string>TODAY : </string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="3">
+      <widget class="QListWidget" name="SearchList">
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="dragEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="dragDropMode">
+        <enum>QAbstractItemView::DragOnly</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="Search_LineEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="3">
+      <widget class="QPushButton" name="all_ex_btn">
+       <property name="text">
+        <string>Export All File</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/images/icons8-save-96.png</normaloff>:/icons/images/icons8-save-96.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionupdate">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/icons8-downloading-updates-96.png</normaloff>:/icons/images/icons8-downloading-updates-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>update</string>
+   </property>
+  </action>
+  <action name="actiondelete">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/icons8-delete-96.png</normaloff>:/icons/images/icons8-delete-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>delete</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

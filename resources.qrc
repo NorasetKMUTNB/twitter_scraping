@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>images/icons8-save-96.png</file>
+    <file>images/icons8-calendar-96.png</file>
+    <file>images/icons8-close-384.png</file>
+    <file>images/icons8-delete-96.png</file>
+    <file>images/icons8-document-384.png</file>
+    <file>images/icons8-downloading-updates-96.png</file>
+    <file>images/icons8-emergency-exit-96.png</file>
+    <file>images/icons8-group-layouts-96.png</file>
+    <file>images/icons8-info-384.png</file>
+    <file>images/icons8-menu-384.png</file>
+    <file>images/icons8-opened-folder-384.png</file>
+  </qresource>
+</RCC>
